@@ -29,3 +29,20 @@ users = [Admin(),QuizPlayer()]
 
 for user in users:
     user.display()
+
+# ABSTRACTION
+
+class QuizBase(ABC):
+
+    @abstractmethod
+    def start(self):
+        pass
+
+class Quiz(QuizBase):
+
+    def start(self):
+        print("Quiz Started")
+
+quiz = Quiz()
+
+quiz.start()
