@@ -46,3 +46,10 @@ class Quiz(QuizBase):
 quiz = Quiz()
 
 quiz.start()
+
+# ENCAPSULATION
+
+player = Player("Student")
+
+print(player.name)
+print(player.score)
